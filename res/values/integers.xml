@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!-- The duration of activity transitions in milliseconds. -->
+  <integer name="activity_animation_duration_ms">200</integer>
+  <!-- The amount of time to spend animating in and out the slider and progress bars. -->
+  <integer name="slider_in_out_animation_duration_ms">300</integer>
+</resources>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

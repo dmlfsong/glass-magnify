@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+        
+        <ImageView 
+            android:src="@drawable/magnify_loading_150x150"
+  			android:layout_width="wrap_content"
+  			android:layout_height="wrap_content"
+  			android:background="@color/grey"
+  		    android:id="@+id/magnifyLogo"
+  		    android:contentDescription="@string/magnify_gray_logo"
+  		    />
+  
+    </LinearLayout>
+    <com.google.glass.glassware.zoomin.GlassSliderView
+        android:id="@id/slider"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="-12px"/>
+
+</FrameLayout>

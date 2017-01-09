@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.google.glass.glassware.zoomin"
+    android:versionCode="14"
+    android:versionName="2.3" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="15" />
+    
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    
+    
+    <!-- Uses Features -->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/magnify_source_50x50"
+        android:label="@string/app_name" >
+       
+        <!-- Start Zoom Activity -->
+        <activity
+            android:name="com.google.glass.glassware.zoomin.StartZoomCameraActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
+            </intent-filter>
+            <meta-data
+                android:name="com.google.android.glass.VoiceTrigger"
+                android:resource="@xml/zoom_voice_trigger_start" />
+        </activity>
+
+        <!-- Perform Zoom Activity -->
+        <activity
+            android:name="com.google.glass.glassware.zoomin.PerformZoomActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.PERFORM_ZOOM_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    
+    </application>
+</manifest>

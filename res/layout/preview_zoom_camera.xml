@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:id="@+id/main_layout"
+    android:orientation="vertical">
+
+	<FrameLayout
+	    android:id="@+id/camera_preview"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" />
+	
+	<ImageView
+        android:id="@+id/magnifying_glass_indicator"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:visibility="gone" 
+        android:contentDescription="@string/magnifying_glass_indicator"
+      />
+	
+    <RelativeLayout
+        android:id="@+id/tips_container"
+        android:background="@drawable/gradient50"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0">
+
+        <TextView
+            android:id="@+id/tips_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/card_margin"
+            android:singleLine="true"
+            android:ellipsize="end"  
+            />
+    </RelativeLayout>	
+    
+    <com.google.glass.glassware.zoomin.ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" />
+</RelativeLayout>    

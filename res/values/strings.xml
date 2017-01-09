@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   
+    <!-- Voice Commands -->
+    <string name="app_name">Magnify</string>
+    <string name="zoom_camera_in">magnify this</string>
+   
+    <!-- Menu Options -->
+    <string name="option_relaunch">Reset timer</string> 
+    
+    <!-- UI -->
+    <string name="timer_title">Timer</string>
+	<string name="zoom_title">Zoom</string>
+	<string name="screen_headline">Magnify</string>
+	<string name="zero_value">0</string>
+	
+	<string name="request_time_extension">press the camera button\nto reset the timer.</string>
+	<string name="guidance_swipe_forward">Swipe 2 fingers forward to zoom in</string>
+	<string name="guidance_swipe_back">Swipe 2 fingers back to zoom out</string>
+	<string name="magnifying_glass_indicator">magnifying glass indicator.</string>
+	<string name="magnify_gray_logo">Magnify gray logo within a loading page</string>
+	
+</resources>
